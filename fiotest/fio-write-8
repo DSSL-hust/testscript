@@ -1,0 +1,16 @@
+[write]
+ioengine=sync
+blocksize=64K
+numjobs=8
+group_reporting
+filesize=500M
+runtime=10
+#time_based
+#fsync_on_close=1
+randrepeat=0
+rw=rw
+rwmixread=0
+rwmixwrite=100
+
+directory=/mnt/pmem_emul
+#filename=/mnt/ramdisk/test1

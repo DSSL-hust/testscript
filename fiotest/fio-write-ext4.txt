@@ -1,0 +1,401 @@
+Creating filesystem with 33030144 4k blocks and 8257536 inodes
+Filesystem UUID: 1b1c9067-2574-41a2-aea3-db3e1a862e65
+Superblock backups stored on blocks: 
+	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208, 
+	4096000, 7962624, 11239424, 20480000, 23887872
+
+Allocating group tables:    0/1008         done                            
+Writing inode tables:    0/1008         done                            
+Creating journal (32768 blocks): done
+Writing superblocks and filesystem accounting information:    0/1008         done
+
+write: (g=0): rw=randrw, bs=(R) 32.0KiB-32.0KiB, (W) 32.0KiB-32.0KiB, (T) 32.0KiB-32.0KiB, ioengine=sync, iodepth=1
+fio-3.26-29-ga2aa
+Starting 1 process
+write: Laying out IO file (1 file / 500MiB)
+
+write: (groupid=0, jobs=1): err= 0: pid=3275: Wed Apr 21 17:16:55 2021
+  write: IOPS=50.3k, BW=1573MiB/s (1650MB/s)(15.4GiB/10001msec); 0 zone resets
+    clat (nsec): min=12437, max=76503, avg=19243.64, stdev=3163.00
+     lat (nsec): min=12631, max=76645, avg=19411.10, stdev=3163.97
+    clat percentiles (nsec):
+     |  1.00th=[14400],  5.00th=[15424], 10.00th=[16064], 20.00th=[17024],
+     | 30.00th=[17536], 40.00th=[18304], 50.00th=[18816], 60.00th=[19584],
+     | 70.00th=[20096], 80.00th=[21120], 90.00th=[22400], 95.00th=[23936],
+     | 99.00th=[30592], 99.50th=[36608], 99.90th=[44800], 99.95th=[47872],
+     | 99.99th=[54528]
+   bw (  MiB/s): min= 1471, max= 1621, per=100.00%, avg=1577.16, stdev=33.52, samples=19
+   iops        : min=47080, max=51896, avg=50469.16, stdev=1072.64, samples=19
+  lat (usec)   : 20=67.63%, 50=32.34%, 100=0.03%
+  cpu          : usr=3.56%, sys=96.36%, ctx=839, majf=0, minf=73
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=0,503466,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+  WRITE: bw=1573MiB/s (1650MB/s), 1573MiB/s-1573MiB/s (1650MB/s-1650MB/s), io=15.4GiB (16.5GB), run=10001-10001msec
+
+Disk stats (read/write):
+  pmem0: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+Creating filesystem with 33030144 4k blocks and 8257536 inodes
+Filesystem UUID: 1694f2f8-3151-4156-84de-6342f08bde74
+Superblock backups stored on blocks: 
+	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208, 
+	4096000, 7962624, 11239424, 20480000, 23887872
+
+Allocating group tables:    0/1008         done                            
+Writing inode tables:    0/1008         done                            
+Creating journal (32768 blocks): done
+Writing superblocks and filesystem accounting information:    0/1008         done
+
+write: (g=0): rw=randrw, bs=(R) 32.0KiB-32.0KiB, (W) 32.0KiB-32.0KiB, (T) 32.0KiB-32.0KiB, ioengine=sync, iodepth=1
+...
+fio-3.26-29-ga2aa
+Starting 2 processes
+write: Laying out IO file (1 file / 500MiB)
+
+write: (groupid=0, jobs=2): err= 0: pid=3320: Wed Apr 21 17:17:06 2021
+  write: IOPS=27.0k, BW=844MiB/s (885MB/s)(8439MiB/10001msec); 0 zone resets
+    clat (usec): min=13, max=1320.1k, avg=73.36, stdev=4748.03
+     lat (usec): min=14, max=1320.1k, avg=73.54, stdev=4748.03
+    clat percentiles (usec):
+     |  1.00th=[   18],  5.00th=[   21], 10.00th=[   34], 20.00th=[   37],
+     | 30.00th=[   40], 40.00th=[   44], 50.00th=[   46], 60.00th=[   48],
+     | 70.00th=[   49], 80.00th=[   51], 90.00th=[   55], 95.00th=[   60],
+     | 99.00th=[   73], 99.50th=[   76], 99.90th=[   86], 99.95th=[   92],
+     | 99.99th=[12125]
+   bw (  KiB/s): min= 7296, max=1743424, per=100.00%, avg=1041212.00, stdev=290355.30, samples=32
+   iops        : min=  228, max=54482, avg=32537.88, stdev=9073.60, samples=32
+  lat (usec)   : 20=4.02%, 50=72.30%, 100=23.65%, 250=0.01%
+  lat (msec)   : 4=0.01%, 10=0.01%, 20=0.01%, 50=0.01%, 100=0.01%
+  lat (msec)   : 250=0.01%, 500=0.01%, 750=0.01%, 2000=0.01%
+  cpu          : usr=0.82%, sys=62.08%, ctx=172856, majf=0, minf=151
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=0,270051,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+  WRITE: bw=844MiB/s (885MB/s), 844MiB/s-844MiB/s (885MB/s-885MB/s), io=8439MiB (8849MB), run=10001-10001msec
+
+Disk stats (read/write):
+  pmem0: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+Creating filesystem with 33030144 4k blocks and 8257536 inodes
+Filesystem UUID: 59e98701-5caa-48d7-a892-be8d814c627b
+Superblock backups stored on blocks: 
+	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208, 
+	4096000, 7962624, 11239424, 20480000, 23887872
+
+Allocating group tables:    0/1008         done                            
+Writing inode tables:    0/1008         done                            
+Creating journal (32768 blocks): done
+Writing superblocks and filesystem accounting information:    0/1008         done
+
+write: (g=0): rw=randrw, bs=(R) 32.0KiB-32.0KiB, (W) 32.0KiB-32.0KiB, (T) 32.0KiB-32.0KiB, ioengine=sync, iodepth=1
+...
+fio-3.26-29-ga2aa
+Starting 4 processes
+write: Laying out IO file (1 file / 500MiB)
+
+write: (groupid=0, jobs=4): err= 0: pid=3369: Wed Apr 21 17:17:17 2021
+  write: IOPS=36.0k, BW=1125MiB/s (1180MB/s)(11.0GiB/10001msec); 0 zone resets
+    clat (usec): min=14, max=1752.1k, avg=110.24, stdev=6723.15
+     lat (usec): min=14, max=1752.1k, avg=110.48, stdev=6723.15
+    clat percentiles (usec):
+     |  1.00th=[    18],  5.00th=[    20], 10.00th=[    21], 20.00th=[    23],
+     | 30.00th=[    35], 40.00th=[    38], 50.00th=[    40], 60.00th=[    42],
+     | 70.00th=[    44], 80.00th=[    48], 90.00th=[    52], 95.00th=[    57],
+     | 99.00th=[    77], 99.50th=[    92], 99.90th=[   110], 99.95th=[ 32113],
+     | 99.99th=[105382]
+   bw (  MiB/s): min=   71, max= 2667, per=100.00%, avg=1320.49, stdev=179.93, samples=63
+   iops        : min= 2282, max=85368, avg=42255.73, stdev=5757.87, samples=63
+  lat (usec)   : 20=7.01%, 50=79.15%, 100=13.65%, 250=0.10%, 750=0.01%
+  lat (msec)   : 10=0.01%, 20=0.01%, 50=0.05%, 100=0.02%, 250=0.01%
+  lat (msec)   : 500=0.01%, 750=0.01%, 2000=0.01%
+  cpu          : usr=0.74%, sys=37.26%, ctx=361613, majf=0, minf=198
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=0,360161,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+  WRITE: bw=1125MiB/s (1180MB/s), 1125MiB/s-1125MiB/s (1180MB/s-1180MB/s), io=11.0GiB (11.8GB), run=10001-10001msec
+
+Disk stats (read/write):
+  pmem0: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+Creating filesystem with 33030144 4k blocks and 8257536 inodes
+Filesystem UUID: bd4adcc0-a971-42b9-be73-788ef158e7b6
+Superblock backups stored on blocks: 
+	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208, 
+	4096000, 7962624, 11239424, 20480000, 23887872
+
+Allocating group tables:    0/1008         done                            
+Writing inode tables:    0/1008         done                            
+Creating journal (32768 blocks): done
+Writing superblocks and filesystem accounting information:    0/1008         done
+
+write: (g=0): rw=randrw, bs=(R) 32.0KiB-32.0KiB, (W) 32.0KiB-32.0KiB, (T) 32.0KiB-32.0KiB, ioengine=sync, iodepth=1
+...
+fio-3.26-29-ga2aa
+Starting 6 processes
+write: Laying out IO file (1 file / 500MiB)
+
+write: (groupid=0, jobs=6): err= 0: pid=3417: Wed Apr 21 17:17:28 2021
+  write: IOPS=21.1k, BW=660MiB/s (692MB/s)(6600MiB/10001msec); 0 zone resets
+    clat (usec): min=15, max=873312, avg=283.26, stdev=8252.06
+     lat (usec): min=15, max=873313, avg=283.49, stdev=8252.06
+    clat percentiles (usec):
+     |  1.00th=[    20],  5.00th=[    32], 10.00th=[    43], 20.00th=[    46],
+     | 30.00th=[    47], 40.00th=[    49], 50.00th=[    50], 60.00th=[    52],
+     | 70.00th=[    58], 80.00th=[    89], 90.00th=[    96], 95.00th=[   101],
+     | 99.00th=[   133], 99.50th=[   139], 99.90th=[ 64226], 99.95th=[156238],
+     | 99.99th=[408945]
+   bw (  KiB/s): min=19328, max=2682496, per=100.00%, avg=680821.89, stdev=133696.30, samples=111
+   iops        : min=  604, max=83828, avg=21275.57, stdev=4177.99, samples=111
+  lat (usec)   : 20=1.09%, 50=48.84%, 100=44.18%, 250=5.73%, 500=0.03%
+  lat (msec)   : 10=0.01%, 20=0.01%, 50=0.01%, 100=0.03%, 250=0.05%
+  lat (msec)   : 500=0.02%, 750=0.01%, 1000=0.01%
+  cpu          : usr=0.31%, sys=22.41%, ctx=212458, majf=0, minf=216
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=0,211211,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+  WRITE: bw=660MiB/s (692MB/s), 660MiB/s-660MiB/s (692MB/s-692MB/s), io=6600MiB (6921MB), run=10001-10001msec
+
+Disk stats (read/write):
+  pmem0: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+Creating filesystem with 33030144 4k blocks and 8257536 inodes
+Filesystem UUID: d8b92dcd-acfd-4864-a7bc-df9f8c1c442d
+Superblock backups stored on blocks: 
+	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208, 
+	4096000, 7962624, 11239424, 20480000, 23887872
+
+Allocating group tables:    0/1008         done                            
+Writing inode tables:    0/1008         done                            
+Creating journal (32768 blocks): done
+Writing superblocks and filesystem accounting information:    0/1008         done
+
+write: (g=0): rw=randrw, bs=(R) 32.0KiB-32.0KiB, (W) 32.0KiB-32.0KiB, (T) 32.0KiB-32.0KiB, ioengine=sync, iodepth=1
+...
+fio-3.26-29-ga2aa
+Starting 8 processes
+write: Laying out IO file (1 file / 500MiB)
+
+write: (groupid=0, jobs=8): err= 0: pid=3467: Wed Apr 21 17:17:40 2021
+  write: IOPS=29.8k, BW=930MiB/s (975MB/s)(9302MiB/10001msec); 0 zone resets
+    clat (usec): min=15, max=1292.1k, avg=267.92, stdev=10573.02
+     lat (usec): min=15, max=1292.1k, avg=268.16, stdev=10573.02
+    clat percentiles (usec):
+     |  1.00th=[    19],  5.00th=[    20], 10.00th=[    22], 20.00th=[    25],
+     | 30.00th=[    38], 40.00th=[    40], 50.00th=[    43], 60.00th=[    47],
+     | 70.00th=[    49], 80.00th=[    52], 90.00th=[    67], 95.00th=[    94],
+     | 99.00th=[   106], 99.50th=[   116], 99.90th=[   437], 99.95th=[147850],
+     | 99.99th=[505414]
+   bw (  MiB/s): min=   20, max= 3582, per=100.00%, avg=1039.34, stdev=146.40, samples=131
+   iops        : min=  648, max=114636, avg=33258.96, stdev=4684.84, samples=131
+  lat (usec)   : 20=5.65%, 50=67.99%, 100=24.09%, 250=2.17%, 500=0.01%
+  lat (msec)   : 4=0.01%, 10=0.01%, 50=0.01%, 100=0.02%, 250=0.05%
+  lat (msec)   : 500=0.01%, 750=0.01%, 1000=0.01%, 2000=0.01%
+  cpu          : usr=0.29%, sys=18.07%, ctx=299056, majf=0, minf=318
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=0,297670,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+  WRITE: bw=930MiB/s (975MB/s), 930MiB/s-930MiB/s (975MB/s-975MB/s), io=9302MiB (9754MB), run=10001-10001msec
+
+Disk stats (read/write):
+  pmem0: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+Creating filesystem with 33030144 4k blocks and 8257536 inodes
+Filesystem UUID: eaf289d8-5db3-4bc2-b335-9c2f48c98a9b
+Superblock backups stored on blocks: 
+	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208, 
+	4096000, 7962624, 11239424, 20480000, 23887872
+
+Allocating group tables:    0/1008         done                            
+Writing inode tables:    0/1008         done                            
+Creating journal (32768 blocks): done
+Writing superblocks and filesystem accounting information:    0/1008         done
+
+write: (g=0): rw=randrw, bs=(R) 32.0KiB-32.0KiB, (W) 32.0KiB-32.0KiB, (T) 32.0KiB-32.0KiB, ioengine=sync, iodepth=1
+...
+fio-3.26-29-ga2aa
+Starting 10 processes
+write: Laying out IO file (1 file / 500MiB)
+
+write: (groupid=0, jobs=10): err= 0: pid=3519: Wed Apr 21 17:17:51 2021
+  write: IOPS=21.8k, BW=682MiB/s (715MB/s)(6820MiB/10003msec); 0 zone resets
+    clat (usec): min=15, max=1272.1k, avg=457.37, stdev=13443.24
+     lat (usec): min=15, max=1272.1k, avg=457.61, stdev=13443.24
+    clat percentiles (usec):
+     |  1.00th=[    20],  5.00th=[    34], 10.00th=[    39], 20.00th=[    45],
+     | 30.00th=[    47], 40.00th=[    49], 50.00th=[    50], 60.00th=[    52],
+     | 70.00th=[    56], 80.00th=[    87], 90.00th=[    97], 95.00th=[   102],
+     | 99.00th=[   130], 99.50th=[   145], 99.90th=[152044], 99.95th=[299893],
+     | 99.99th=[608175]
+   bw (  KiB/s): min=25408, max=3210944, per=100.00%, avg=761390.53, stdev=102399.57, samples=176
+   iops        : min=  794, max=100342, avg=23793.45, stdev=3199.99, samples=176
+  lat (usec)   : 20=1.46%, 50=47.81%, 100=44.60%, 250=5.97%, 500=0.01%
+  lat (usec)   : 750=0.01%
+  lat (msec)   : 20=0.01%, 50=0.01%, 100=0.01%, 250=0.05%, 500=0.05%
+  lat (msec)   : 750=0.01%, 1000=0.01%, 2000=0.01%
+  cpu          : usr=0.26%, sys=13.49%, ctx=219622, majf=0, minf=320
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=0,218237,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+  WRITE: bw=682MiB/s (715MB/s), 682MiB/s-682MiB/s (715MB/s-715MB/s), io=6820MiB (7151MB), run=10003-10003msec
+
+Disk stats (read/write):
+  pmem0: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+Creating filesystem with 33030144 4k blocks and 8257536 inodes
+Filesystem UUID: 35aba70f-a1ea-4c46-95b1-fc4df8d43273
+Superblock backups stored on blocks: 
+	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208, 
+	4096000, 7962624, 11239424, 20480000, 23887872
+
+Allocating group tables:    0/1008         done                            
+Writing inode tables:    0/1008         done                            
+Creating journal (32768 blocks): done
+Writing superblocks and filesystem accounting information:    0/1008         done
+
+write: (g=0): rw=randrw, bs=(R) 32.0KiB-32.0KiB, (W) 32.0KiB-32.0KiB, (T) 32.0KiB-32.0KiB, ioengine=sync, iodepth=1
+...
+fio-3.26-29-ga2aa
+Starting 12 processes
+write: Laying out IO file (1 file / 500MiB)
+
+write: (groupid=0, jobs=12): err= 0: pid=3573: Wed Apr 21 17:18:02 2021
+  write: IOPS=19.5k, BW=611MiB/s (641MB/s)(6109MiB/10001msec); 0 zone resets
+    clat (usec): min=37, max=1519.8k, avg=613.02, stdev=21169.35
+     lat (usec): min=38, max=1519.8k, avg=613.24, stdev=21169.35
+    clat percentiles (usec):
+     |  1.00th=[     43],  5.00th=[     45], 10.00th=[     46],
+     | 20.00th=[     47], 30.00th=[     49], 40.00th=[     50],
+     | 50.00th=[     51], 60.00th=[     53], 70.00th=[     56],
+     | 80.00th=[     74], 90.00th=[     96], 95.00th=[    101],
+     | 99.00th=[    135], 99.50th=[    143], 99.90th=[    668],
+     | 99.95th=[ 484443], 99.99th=[1098908]
+   bw (  KiB/s): min=12937, max=3307021, per=100.00%, avg=859438.61, stdev=103794.57, samples=156
+   iops        : min=  404, max=103343, avg=26856.31, stdev=3243.55, samples=156
+  lat (usec)   : 50=44.07%, 100=50.00%, 250=5.79%, 500=0.02%, 750=0.03%
+  lat (usec)   : 1000=0.01%
+  lat (msec)   : 20=0.01%, 100=0.01%, 250=0.02%, 500=0.03%, 750=0.02%
+  lat (msec)   : 1000=0.01%, 2000=0.02%
+  cpu          : usr=0.09%, sys=10.56%, ctx=196714, majf=0, minf=339
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=0,195498,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+  WRITE: bw=611MiB/s (641MB/s), 611MiB/s-611MiB/s (641MB/s-641MB/s), io=6109MiB (6406MB), run=10001-10001msec
+
+Disk stats (read/write):
+  pmem0: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+Creating filesystem with 33030144 4k blocks and 8257536 inodes
+Filesystem UUID: 2bd9b646-52df-42ee-abff-9f58f29a9a72
+Superblock backups stored on blocks: 
+	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208, 
+	4096000, 7962624, 11239424, 20480000, 23887872
+
+Allocating group tables:    0/1008         done                            
+Writing inode tables:    0/1008         done                            
+Creating journal (32768 blocks): done
+Writing superblocks and filesystem accounting information:    0/1008         done
+
+write: (g=0): rw=randrw, bs=(R) 32.0KiB-32.0KiB, (W) 32.0KiB-32.0KiB, (T) 32.0KiB-32.0KiB, ioengine=sync, iodepth=1
+...
+fio-3.26-29-ga2aa
+Starting 16 processes
+write: Laying out IO file (1 file / 500MiB)
+
+write: (groupid=0, jobs=16): err= 0: pid=3629: Wed Apr 21 17:18:13 2021
+  write: IOPS=27.8k, BW=867MiB/s (909MB/s)(8673MiB/10001msec); 0 zone resets
+    clat (usec): min=14, max=1040.1k, avg=575.63, stdev=17201.54
+     lat (usec): min=15, max=1040.1k, avg=575.86, stdev=17201.54
+    clat percentiles (usec):
+     |  1.00th=[    19],  5.00th=[    20], 10.00th=[    22], 20.00th=[    24],
+     | 30.00th=[    38], 40.00th=[    42], 50.00th=[    45], 60.00th=[    48],
+     | 70.00th=[    50], 80.00th=[    54], 90.00th=[    91], 95.00th=[    98],
+     | 99.00th=[   117], 99.50th=[   139], 99.90th=[240124], 99.95th=[467665],
+     | 99.99th=[775947]
+   bw (  MiB/s): min=   24, max= 5381, per=100.00%, avg=1038.09, stdev=95.89, samples=259
+   iops        : min=  776, max=172222, avg=33218.87, stdev=3068.37, samples=259
+  lat (usec)   : 20=5.79%, 50=64.31%, 100=26.13%, 250=3.62%, 500=0.03%
+  lat (usec)   : 750=0.01%
+  lat (msec)   : 4=0.01%, 20=0.01%, 50=0.01%, 100=0.01%, 250=0.02%
+  lat (msec)   : 500=0.06%, 750=0.03%, 1000=0.01%, 2000=0.01%
+  cpu          : usr=0.19%, sys=8.87%, ctx=278947, majf=0, minf=387
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=0,277546,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+  WRITE: bw=867MiB/s (909MB/s), 867MiB/s-867MiB/s (909MB/s-909MB/s), io=8673MiB (9095MB), run=10001-10001msec
+
+Disk stats (read/write):
+  pmem0: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+Creating filesystem with 33030144 4k blocks and 8257536 inodes
+Filesystem UUID: 66bac1c2-d783-45c7-93b0-dfaf55950814
+Superblock backups stored on blocks: 
+	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208, 
+	4096000, 7962624, 11239424, 20480000, 23887872
+
+Allocating group tables:    0/1008         done                            
+Writing inode tables:    0/1008         done                            
+Creating journal (32768 blocks): done
+Writing superblocks and filesystem accounting information:    0/1008         done
+
+write: (g=0): rw=randrw, bs=(R) 32.0KiB-32.0KiB, (W) 32.0KiB-32.0KiB, (T) 32.0KiB-32.0KiB, ioengine=sync, iodepth=1
+...
+fio-3.26-29-ga2aa
+Starting 20 processes
+write: Laying out IO file (1 file / 500MiB)
+
+write: (groupid=0, jobs=20): err= 0: pid=3689: Wed Apr 21 17:18:24 2021
+  write: IOPS=25.5k, BW=796MiB/s (835MB/s)(7964MiB/10005msec); 0 zone resets
+    clat (usec): min=15, max=2864.2k, avg=784.07, stdev=29062.40
+     lat (usec): min=15, max=2864.2k, avg=784.31, stdev=29062.40
+    clat percentiles (usec):
+     |  1.00th=[     19],  5.00th=[     21], 10.00th=[     23],
+     | 20.00th=[     38], 30.00th=[     41], 40.00th=[     45],
+     | 50.00th=[     48], 60.00th=[     49], 70.00th=[     52],
+     | 80.00th=[     55], 90.00th=[     71], 95.00th=[     96],
+     | 99.00th=[    111], 99.50th=[    135], 99.90th=[ 240124],
+     | 99.95th=[ 541066], 99.99th=[1417675]
+   bw (  MiB/s): min=   16, max= 5391, per=100.00%, avg=1200.67, stdev=105.69, samples=242
+   iops        : min=  542, max=172538, avg=38421.42, stdev=3382.13, samples=242
+  lat (usec)   : 20=3.55%, 50=60.65%, 100=32.76%, 250=2.85%, 500=0.06%
+  lat (usec)   : 750=0.01%, 1000=0.02%
+  lat (msec)   : 2=0.01%, 4=0.01%, 10=0.01%, 50=0.01%, 100=0.01%
+  lat (msec)   : 250=0.01%, 500=0.04%, 750=0.02%, 1000=0.01%, 2000=0.01%
+  lat (msec)   : >=2000=0.01%
+  cpu          : usr=0.12%, sys=6.69%, ctx=256348, majf=0, minf=489
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=0,254862,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+  WRITE: bw=796MiB/s (835MB/s), 796MiB/s-796MiB/s (835MB/s-835MB/s), io=7964MiB (8351MB), run=10005-10005msec
+
+Disk stats (read/write):
+  pmem0: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+done.

@@ -1,0 +1,15 @@
+[write]
+ioengine=sync
+blocksize=32K
+numjobs=1
+group_reporting
+filesize=500M
+runtime=10
+time_based
+#fsync_on_close=1
+randrepeat=0
+rw=randrw
+rwmixread=0
+rwmixwrite=100
+
+filename=/mnt/pmem_emul/1.txt
